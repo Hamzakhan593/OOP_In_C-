@@ -53,3 +53,6 @@ Student s1 = Jahangir;
 s1.Name = "Modified Name";
 Console.WriteLine(Jahangir.Name);
 
+Employee Imran = new Employee("Imran", 30, "123tgd", "Developer", 200000, "Sanghar", "TechCorp");
+Employee_Service employee_Service = new Employee_Service();
+employee_Service.printEmployee(Imran);
