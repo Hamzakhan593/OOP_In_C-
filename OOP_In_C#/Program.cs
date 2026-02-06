@@ -61,3 +61,7 @@ Employee Imran = new Employee("Imran", 30, "123tgd", "Developer",
     200000, "karachi", "TechCorp");
 Employee_Service employee_Service = new Employee_Service();
 employee_Service.printEmployee(Imran);
+
+Calculator calculator = new Calculator();
+calculator.Add(5, 10);
+calculator.Add(5, 10, 15);
