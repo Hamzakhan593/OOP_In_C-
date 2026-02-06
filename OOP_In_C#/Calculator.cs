@@ -16,6 +16,11 @@ namespace OOP_In_C_
         {
             Console.WriteLine(a + b + c);
         }
+        public double Add(double b, int a, int c)
+        {
+            Console.WriteLine(a + b + c);
+            return a + b + c;
+        }
 
         public int Subtract(int a, int b)
         {
