@@ -8,6 +8,7 @@ namespace OOP_In_C_
 {
     public class Employee_Service
     {
+        // Service: Handles logic
         public void printEmployee(Employee employee)
         {
             Console.WriteLine("Employee Name: " + employee.Name);

@@ -16,7 +16,8 @@ namespace OOP_In_C_
         public string Address { get; set; }
         public string Company { get; set; }
 
-        public Employee(string name, int age, string employeeID, string position, double salary, string address, string company)
+        public Employee(string name, int age, string employeeID,
+            string position, double salary, string address, string company)
         {
             Name = name;
             Age = age;

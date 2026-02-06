@@ -18,7 +18,7 @@ namespace OOP_In_C_
         //public string Address;
         //public string Univerity;
         public string Name { get; set; }
-        public int Age { get; set; }
+        private int Age { get; set; }
         public string RollNo { get; set; }
         public string Batch { get; set; }
         public string Course { get; set; }  
@@ -26,6 +26,22 @@ namespace OOP_In_C_
         public string Address { get; set; }
         public string Univerity { get; set; }
 
+        public int age
+        {
+            get { return Age; }
+            set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Age cannot be negative. Setting age to 0.");
+                    Age = 0;
+                }
+                else
+                {
+                    Age = value;
+                }
+            }
+        }
 
         public void studentInfoPrint()
         {

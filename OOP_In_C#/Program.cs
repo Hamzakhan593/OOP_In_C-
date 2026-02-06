@@ -2,7 +2,7 @@
 
 Student Jahangir = new Student();
 Jahangir.Name = "Jahangir";
-Jahangir.Age = -24;
+Jahangir.age = -24;
 Jahangir.RollNo = "23bsit04";
 Jahangir.Batch = "2023";
 Jahangir.Course = "BSIT";
@@ -12,7 +12,7 @@ Jahangir.Univerity = "SBBU";
 
 Student Hamza = new Student();
 Hamza.Name = "Hamza";
-Hamza.Age = 24;
+Hamza.age = 24;
 Hamza.RollNo = "23bsit02";
 Hamza.Batch = "2023";
 Hamza.Course = "BSIT";
@@ -22,7 +22,7 @@ Hamza.Univerity = "SBBU";
 
 Student Shahzeb = new Student();
 Shahzeb.Name = "Shahzeb";
-Shahzeb.Age = 17;
+Shahzeb.age = -17;
 Shahzeb.RollNo = "23bsit37";
 Shahzeb.Batch = "2023";
 Shahzeb.Course = "BSIT";
@@ -57,6 +57,7 @@ Console.WriteLine(Jahangir.Name);
 
 // Employee Section
 // Creating an Employee object and using Employee_Service to print its details
-Employee Imran = new Employee("Imran", 30, "123tgd", "Developer", 200000, "Sanghar", "TechCorp");
+Employee Imran = new Employee("Imran", 30, "123tgd", "Developer",
+    200000, "karachi", "TechCorp");
 Employee_Service employee_Service = new Employee_Service();
 employee_Service.printEmployee(Imran);
