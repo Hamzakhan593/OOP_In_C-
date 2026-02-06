@@ -2,11 +2,28 @@
 
 
 
+var cardPayments = new List<CardPayment>
+{
+    new CardPayment("1234 5678 9012 3456", "Hamza", "12/25", "123"),
+    new CardPayment("9876 5432 1098 7654", "Jahangir", "11/24", "456"),
+    new CardPayment("5555 6666 7777 8888", "Shahzeb", "10/23", "789")
+};
 
-Payment payment = new Payment();
-payment.Pay(1000);
-payment.Pay(1500, "Credit Card");
-payment.Pay(2000, "PayPal", true);
+
+CardPaymentLogic cpl = new CardPaymentLogic();
+foreach (var item in cardPayments)
+{
+    cpl.printCardDetails(item);
+}
+
+
+
+
+// function overloading is a feature in C# that allows you to define multiple methods with the same name but different parameters.
+//Payment payment = new Payment();
+//payment.Pay(1000);
+//payment.Pay(1500, "Credit Card");
+//payment.Pay(2000, "PayPal", true);
 
 
 
