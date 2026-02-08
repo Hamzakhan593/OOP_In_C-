@@ -2,13 +2,35 @@
 
 
 
-//constructor overloading is a feature in C# that allows you to define multiple constructors with the same name but different parameters.
-ConstructorOverloading defaultconstructorOverloading = new ConstructorOverloading();
-defaultconstructorOverloading.DisplayInfo();
-ConstructorOverloading parameterizedconstructorOverloading = new ConstructorOverloading("Hamza", 24);
-parameterizedconstructorOverloading.DisplayInfo();
-ConstructorOverloading anotherParameterizedconstructorOverloading = new ConstructorOverloading("Jahangir");
-anotherParameterizedconstructorOverloading.DisplayInfo();
+
+
+BankAccount account = new BankAccount();
+account.Deposit(1000);
+account.Deposit(0);
+account.Deposit(-87);
+
+account.Withdraw(500);
+account.Withdraw(0);
+account.Withdraw(2000);
+account.Withdraw(-200);
+
+
+account.getBalance();
+
+
+
+
+
+
+
+
+////constructor overloading is a feature in C# that allows us to define multiple constructors with the same name but different parameters.
+//ConstructorOverloading defaultconstructorOverloading = new ConstructorOverloading();
+//defaultconstructorOverloading.DisplayInfo();
+//ConstructorOverloading parameterizedconstructorOverloading = new ConstructorOverloading("Hamza", 24);
+//parameterizedconstructorOverloading.DisplayInfo();
+//ConstructorOverloading anotherParameterizedconstructorOverloading = new ConstructorOverloading("Jahangir");
+//anotherParameterizedconstructorOverloading.DisplayInfo();
 
 
 
