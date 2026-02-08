@@ -2,19 +2,32 @@
 
 
 
-var cardPayments = new List<CardPayment>
-{
-    new CardPayment("1234 5678 9012 3456", "Hamza", "12/25", "123"),
-    new CardPayment("9876 5432 1098 7654", "Jahangir", "11/24", "456"),
-    new CardPayment("5555 6666 7777 8888", "Shahzeb", "10/23", "789")
-};
+//constructor overloading is a feature in C# that allows you to define multiple constructors with the same name but different parameters.
+ConstructorOverloading defaultconstructorOverloading = new ConstructorOverloading();
+defaultconstructorOverloading.DisplayInfo();
+ConstructorOverloading parameterizedconstructorOverloading = new ConstructorOverloading("Hamza", 24);
+parameterizedconstructorOverloading.DisplayInfo();
+ConstructorOverloading anotherParameterizedconstructorOverloading = new ConstructorOverloading("Jahangir");
+anotherParameterizedconstructorOverloading.DisplayInfo();
 
 
-CardPaymentLogic cpl = new CardPaymentLogic();
-foreach (var item in cardPayments)
-{
-    cpl.printCardDetails(item);
-}
+
+
+
+
+//var cardPayments = new List<CardPayment>
+//{
+//    new CardPayment("1234 5678 9012 3456", "Hamza", "12/25", "123"),
+//    new CardPayment("9876 5432 1098 7654", "Jahangir", "11/24", "456"),
+//    new CardPayment("5555 6666 7777 8888", "Shahzeb", "10/23", "789")
+//};
+
+
+//CardPaymentLogic cpl = new CardPaymentLogic();
+//foreach (var item in cardPayments)
+//{
+//    cpl.printCardDetails(item);
+//}
 
 
 
