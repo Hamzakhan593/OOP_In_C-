@@ -3,19 +3,30 @@
 
 
 
+//// Encapsulation where data his protected 
+BankAccount HamzaACC = new BankAccount("Hamza", "1234");
+Bank_Account_Logic hamza = new Bank_Account_Logic(HamzaACC);
+hamza.Deposit(1000);
+hamza.Withdraw(500);
+hamza.getBalance();
+Console.WriteLine();
 
-BankAccount account = new BankAccount();
-account.Deposit(1000);
-account.Deposit(0);
-account.Deposit(-87);
+BankAccount ShahzebAcc = new BankAccount("shahzeb", "1234");
+Bank_Account_Logic shahzeb = new Bank_Account_Logic(ShahzebAcc);
+shahzeb.Deposit(200009);
+shahzeb.Withdraw(500);
+shahzeb.getBalance();
+Console.WriteLine();
 
-account.Withdraw(500);
-account.Withdraw(0);
-account.Withdraw(2000);
-account.Withdraw(-200);
+BankAccount jahangirAcc = new BankAccount("jahangir", "1234");
+Bank_Account_Logic jahangir = new Bank_Account_Logic(jahangirAcc);
+jahangir.Deposit(200009);
+jahangir.Withdraw(500);
+jahangir.getBalance();
+Console.WriteLine();
 
 
-account.getBalance();
+
 
 
 

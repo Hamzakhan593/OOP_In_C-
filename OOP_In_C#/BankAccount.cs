@@ -8,49 +8,23 @@ namespace OOP_In_C_
 {
     public class BankAccount
     {
-        private int balance = 0;
-
-        public void Deposit(int amount)
+        private int balance;
+        public string name;
+        public string accountNumber;
+        public BankAccount(string Name, string AccountNumber ) 
         {
-            if (amount > 0)
-            {
-                balance += amount;
-                Console.WriteLine($"You Have Succefully Depoosited {balance} Rupees");
-            }
-            else
-            {
-                Console.WriteLine($"Sorry you can't Deposit {amount}");
-            }
+            balance = 0;
+            name = Name;
+            accountNumber = AccountNumber;
         }
 
-        public void Withdraw(int amount)
+        
+
+        public int Balance
         {
-            if (amount > 0 & balance > amount )
-            {
-                balance -= amount;
-                Console.WriteLine($"You have Withdraw {amount}");
-            }
-            else
-            {
-                Console.WriteLine($"Sorry! Your Balance is {balance}");
-                Console.WriteLine($"You Cannot Withdraw {amount}");
-
-            }
+            get { return balance; }
+            set { balance = value; }
         }
-
-        public void getBalance()
-        {
-            if( balance < 0)
-            {
-                balance = 0;
-                Console.WriteLine($"You Have Insufficient Balance {balance}");
-            }
-            else
-            {
-                Console.WriteLine($"Your Balance is: {balance}");
-            }
-        }
-
 
     }
 }
