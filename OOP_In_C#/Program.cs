@@ -1,29 +1,61 @@
 ﻿using OOP_In_C_;
 
 
+// interface
+//EmailService emailService = new EmailService();
+//Notification notification1 = new Notification(emailService);
+//notification1.Notify("Email has been successfully sent");
+
+//SmsService smsService = new SmsService();
+//Notification notification2 = new Notification(emailService);
+//notification2.Notify("SMS has been successfully send");
+
+// without interface
+EmailService emailService = new EmailService();
+Notification notification = new Notification();
+notification.Send("Email sent");
 
 
-//// Encapsulation where data his protected 
-BankAccount HamzaACC = new BankAccount("Hamza", "1234");
-Bank_Account_Logic hamza = new Bank_Account_Logic(HamzaACC);
-hamza.Deposit(1000);
-hamza.Withdraw(500);
-hamza.getBalance();
-Console.WriteLine();
 
-BankAccount ShahzebAcc = new BankAccount("shahzeb", "1234");
-Bank_Account_Logic shahzeb = new Bank_Account_Logic(ShahzebAcc);
-shahzeb.Deposit(200009);
-shahzeb.Withdraw(500);
-shahzeb.getBalance();
-Console.WriteLine();
+//// Inheritance
+//interface IAnimal
+//{
+//    void MakeSound();
+//}
 
-BankAccount jahangirAcc = new BankAccount("jahangir", "1234");
-Bank_Account_Logic jahangir = new Bank_Account_Logic(jahangirAcc);
-jahangir.Deposit(200009);
-jahangir.Withdraw(500);
-jahangir.getBalance();
-Console.WriteLine();
+//class Dog : IAnimal
+//{
+//    public void MakeSound()
+//    {
+//        Console.WriteLine("Bark");
+//    }
+//}
+
+
+
+
+
+////// Encapsulation where data his protected 
+//BankAccount HamzaACC = new BankAccount("Hamza", "1234");
+//Bank_Account_Logic hamza = new Bank_Account_Logic(HamzaACC);
+//hamza.Deposit(1000);
+//hamza.Withdraw(500);
+//hamza.getBalance();
+//Console.WriteLine();
+
+//BankAccount ShahzebAcc = new BankAccount("shahzeb", "1234");
+//Bank_Account_Logic shahzeb = new Bank_Account_Logic(ShahzebAcc);
+//shahzeb.Deposit(200009);
+//shahzeb.Withdraw(500);
+//shahzeb.getBalance();
+//Console.WriteLine();
+
+//BankAccount jahangirAcc = new BankAccount("jahangir", "1234");
+//Bank_Account_Logic jahangir = new Bank_Account_Logic(jahangirAcc);
+//jahangir.Deposit(200009);
+//jahangir.Withdraw(500);
+//jahangir.getBalance();
+//Console.WriteLine();
 
 
 
