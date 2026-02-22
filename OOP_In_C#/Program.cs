@@ -1,7 +1,28 @@
 ﻿using OOP_In_C_;
 
 
-// interface
+
+
+//// interface
+
+//Shapes
+List<IShapes1> shapes = new List<IShapes1>
+{
+    new Circle(3),
+    new Rectangle(3, 4),
+    new Triangle(3, 2)
+};
+
+foreach (var shape in shapes)
+{
+    Console.WriteLine(shape.CalculateArea());
+    
+};
+
+
+
+
+////Email Service
 //EmailService emailService = new EmailService();
 //Notification notification1 = new Notification(emailService);
 //notification1.Notify("Email has been successfully sent");
@@ -10,10 +31,11 @@
 //Notification notification2 = new Notification(emailService);
 //notification2.Notify("SMS has been successfully send");
 
-// without interface
-EmailService emailService = new EmailService();
-Notification notification = new Notification();
-notification.Send("Email sent");
+
+//// without interface
+//EmailService emailService = new EmailService();
+//Notification notification = new Notification();
+//notification.Send("Email sent");
 
 
 
