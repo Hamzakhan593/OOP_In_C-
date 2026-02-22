@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_In_C_
+namespace OOP_In_C_.Interface
 {
     public class Circle : IShapes1
     {

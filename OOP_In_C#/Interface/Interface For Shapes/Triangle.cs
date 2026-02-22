@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_In_C_
+namespace OOP_In_C_.Interface
 {
     public class Triangle : IShapes1
     {
@@ -19,7 +19,7 @@ namespace OOP_In_C_
 
         public double CalculateArea()
         {
-            return (height / Base) / 2;
+            return height / Base / 2;
         }
     }
 }

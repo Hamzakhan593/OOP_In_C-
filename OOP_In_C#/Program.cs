@@ -1,23 +1,44 @@
 ﻿using OOP_In_C_;
+using OOP_In_C_.Abstract_class.Animal_class;
+using OOP_In_C_.Abstract_class.Employee_Class;
+using OOP_In_C_.Interface;
+using OOP_In_C_.Polymorphism.Method_Overriding;
+
+
+////Method Ovrriding
+//Animal_Overriding dog = new Dog_Overriding();
+//Animal_Overriding dog = new Animal_Overriding();
+//Dog_Overriding dog = new Dog_Overriding();
+//dog.MakeSound();
+
+////Abstract class
+//Dog dog = new Dog("Tommy Dog");
+//dog.MakeSound();
+//Cat cat = new Cat("Silli Cat");
+//cat.MakeSound();
+
+//FullTimeEmployee fullTimeEmployee = new FullTimeEmployee(8, "Hamza");
+//fullTimeEmployee.CalculateSalary();
+//PartTimeEmployee partTimeEmployee = new PartTimeEmployee(8, "Jahangir");
+//partTimeEmployee.CalculateSalary();
 
 
 
 
-//// interface
 
-//Shapes
-List<IShapes1> shapes = new List<IShapes1>
-{
-    new Circle(3),
-    new Rectangle(3, 4),
-    new Triangle(3, 2)
-};
+////interface
+//List<IShapes1> shapes = new List<IShapes1>
+//{
+//    new Circle(3),
+//    new Rectangle(3, 4),
+//    new Triangle(3, 2)
+//};
 
-foreach (var shape in shapes)
-{
-    Console.WriteLine(shape.CalculateArea());
-    
-};
+//foreach (var shape in shapes)
+//{
+//    Console.WriteLine(shape.CalculateArea());
+
+//};
 
 
 
